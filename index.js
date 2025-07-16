@@ -46,7 +46,10 @@ app.use(express.urlencoded({ extended: true, limit: '2mb' })); // New line
 
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: [
+    "http://localhost:5173",
+    "https://woodlandpublishing.vercel.app"
+    ],
     credentials: true,
   })
 );
